@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+        </div>
+
+        <div class="container2">
+            <label class="labels-elements" for="red">RED: </label>
+            <input class="inputs-elements" type="range" name="range1" id="red" min="0" max="255">
+
+            <label class="labels-elements" for="green">GREEN: </label>
+            <input class="inputs-elements" type="range" name="range2" id="green" min="0" max="255">
+
+            <label class="labels-elements" for="blue">BLUE: </label>
+            <input class="inputs-elements" type="range" name="range3" id="blue" min="0" max="255">
+
+            <button type="button" id="button" onclick="updateBackGround()">APLICAR</button>
+        </div>
+    </div>
+</body>
+</html>
