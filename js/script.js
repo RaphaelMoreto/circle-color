@@ -1,4 +1,4 @@
-//SELECIONA O PRIMEIRO ELEMENTO COM O SELECTOR CSS "CIRCLE"
+//SELECIONA O PRIMEIRO ELEMENTO COM O SELECTOR CSS/JS QUE ESTIVER NO PARÊNTESES
 const circle = document.querySelector(".circle");
 const rgbRed = document.querySelector("#rgb-red");
 const rgbGreen = document.querySelector("#rgb-green");
