@@ -1,4 +1,9 @@
+//SELECIONA O PRIMEIRO ELEMENTO COM O SELECTOR CSS "CIRCLE"
 const circle = document.querySelector(".circle");
+const rgbRed = document.querySelector("#rgb-red");
+const rgbGreen = document.querySelector("#rgb-green");
+const rgbBlue = document.querySelector("#rgb-blue");
+
 const redInput = document.getElementById("red");
 const greenInput = document.getElementById("green");
 const blueInput = document.getElementById("blue");
@@ -12,9 +17,27 @@ function updateCircleColor() {
     circle.style.backgroundColor = color;
 };
 
-redInput.addEventListener("input", updateCircleColor);
-greenInput.addEventListener("input", updateCircleColor);
-blueInput.addEventListener("input", updateCircleColor);
+function updateNumbersValue() {
+    rgbRed.textContent = redInput.value;
+    rgbGreen.textContent = greenInput.value;
+    rgbBlue.textContent = blue.value;
+}
+
+//ADICIONA UM OUVINTE NO ELEMENTO INPUT E EXECUTA A FUNÇÃO QUANDO ACONTECE A INTERAÇÃO
+redInput.addEventListener("input", () => {
+    updateCircleColor();
+    updateNumbersValue();
+});
+
+greenInput.addEventListener("input", () => {
+    updateCircleColor();
+    updateNumbersValue();
+});
+
+blueInput.addEventListener("input", () => {
+    updateCircleColor();
+    updateNumbersValue();
+});
 
 function updateBackGround() {
     const red = redInput.value;

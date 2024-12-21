@@ -13,17 +13,26 @@
         </div>
 
         <div class="container2">
-            <label class="labels-elements" for="red">RED: </label>
-            <input class="inputs-elements" type="range" name="range1" id="red" min="0" max="255">
+            <div class="labels-columns">
+                <label class="labels-elements" for="red">RED: </label>
+                <label class="labels-elements" for="green">GREEN: </label>
+                <label class="labels-elements" for="blue">BLUE: </label>
+            </div>
 
-            <label class="labels-elements" for="green">GREEN: </label>
-            <input class="inputs-elements" type="range" name="range2" id="green" min="0" max="255">
+            <div class="inputs-columns">
+                <input class="inputs-elements" type="range" name="range1" id="red" min="0" max="255">
+                <input class="inputs-elements" type="range" name="range2" id="green" min="0" max="255">
+                <input class="inputs-elements" type="range" name="range3" id="blue" min="0" max="255">
+            </div>
 
-            <label class="labels-elements" for="blue">BLUE: </label>
-            <input class="inputs-elements" type="range" name="range3" id="blue" min="0" max="255">
-
-            <button type="button" id="button" onclick="updateBackGround()">APLICAR</button>
+            <div class="numbers-columns">
+                <label class="rgb-numbers" for="red" id="rgb-red"></label>
+                <label class="rgb-numbers" for="green" id="rgb-green"></label>
+                <label class="rgb-numbers" for="blue" id="rgb-blue"></label>
+            </div>
         </div>
+        
+        <button type="button" id="button" onclick="updateBackGround()">APLICAR</button>
     </div>
 </body>
 </html>

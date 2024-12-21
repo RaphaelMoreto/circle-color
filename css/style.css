@@ -14,6 +14,9 @@ body {
 
 .container {
     margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .circle {
@@ -26,14 +29,43 @@ body {
 
 .container2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
-.inputs-elements {
+.labels-columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.labels-columns label {
     margin: 10px 0px;
+}
+
+.labels-elements {
+    display: flex;
+    justify-content: center;
+}
+
+.inputs-columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-elements {
+    margin: 21px;
     width: 400px;
     height: 5px;
+}
+
+.numbers-columns {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rgb-numbers {
+    margin: 10px;
 }
 
 button {
