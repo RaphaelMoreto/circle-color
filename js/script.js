@@ -1,10 +1,10 @@
 //SELECIONA O PRIMEIRO ELEMENTO COM O SELECTOR CSS/JS QUE ESTIVER NO PARÊNTESES
 const circle = document.querySelector(".circle");
-const rgbRed = document.querySelector("#rgb-red");
-const rgbGreen = document.querySelector("#rgb-green");
-const rgbBlue = document.querySelector("#rgb-blue");
-const hexColor = document.querySelector("#hex-color");
 
+const rgbRed = document.getElementById("rgb-red");
+const rgbGreen = document.getElementById("rgb-green");
+const rgbBlue = document.getElementById("rgb-blue");
+const hexColor = document.getElementById("hex-color");
 const redInput = document.getElementById("red");
 const greenInput = document.getElementById("green");
 const blueInput = document.getElementById("blue");
